@@ -19,6 +19,9 @@ const routes: Routes = [
     redirectTo: 'sign-in',
     pathMatch: 'full'
   },
+
+    { path: 'popup-menu', loadChildren: () => import('./popup-menu/popup-menu.module').then(m => m.PopupMenuPageModule) },
+
 ];
 
 @NgModule({
