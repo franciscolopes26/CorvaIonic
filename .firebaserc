@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "corvateste": {
+      "hosting": {
+        "app": [
+          "corvateste"
+        ]
+      }
+    }
+  }
+}

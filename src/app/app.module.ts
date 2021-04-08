@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AngularFireModule } from '@angular/fire';
+import{AngularFirestore} from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 import { FirebaseAuthService } from './firebase-auth.service';
@@ -26,6 +27,7 @@ import { FirebaseAuthService } from './firebase-auth.service';
   providers: [
     StatusBar,
     SplashScreen,
+    AngularFirestore,
     FirebaseAuthService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
