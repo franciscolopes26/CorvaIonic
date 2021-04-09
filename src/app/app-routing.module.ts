@@ -19,8 +19,17 @@ const routes: Routes = [
     redirectTo: 'sign-in',
     pathMatch: 'full'
   },
-
+  { path: 'home', loadChildren: './home/home.module#HomePageModule' },
     { path: 'popup-menu', loadChildren: () => import('./popup-menu/popup-menu.module').then(m => m.PopupMenuPageModule) },
+  {
+    path: 'details/:id',
+    loadChildren: () => import('./pages/todo-details/todo-details.module').then( m => m.TodoDetailsPageModule)
+  },
+  {
+    path: 'details',
+    loadChildren: () => import('./pages/todo-details/todo-details.module').then( m => m.TodoDetailsPageModule)
+  },
+
 
 ];
 
